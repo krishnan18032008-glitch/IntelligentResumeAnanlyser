@@ -1,0 +1,29 @@
+NAME: Priya Raman
+ROLE: Java Developer
+EMAIL: priya.raman@email.com | PHONE: 9123456780
+
+SUMMARY:
+Java Developer with 3+ years of experience in enterprise application 
+development using Spring Boot, REST APIs, and microservices architecture.
+
+SKILLS:
+Java, SQL, HTML, CSS, Spring Boot, REST API, Docker, Git, Microservices, Unit Testing
+
+EXPERIENCE:
+Senior Java Developer - TechNova Pvt Ltd (2022 - Present)
+- Built and deployed microservices using Spring Boot and Docker
+- Designed REST APIs consumed by multiple front-end applications
+- Wrote SQL queries and optimized database performance
+- Performed unit testing using JUnit and Mockito
+- Used Git for version control in an Agile team
+
+Java Developer - InfoSys Systems (2021 - 2022)
+- Developed backend modules using Java and Spring framework
+- Created HTML/CSS templates for admin dashboards
+
+EDUCATION:
+B.Tech Information Technology - SRM University (2021)
+
+PROJECTS:
+- Loan Management System (Spring Boot, REST API, MySQL)
+- Inventory Microservice (Docker, Java, Unit Testing)

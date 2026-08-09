@@ -1,0 +1,29 @@
+Alex Dev
+Email: alex.dev@example.com | Phone: (555) 019-2831 | Location: Seattle, WA
+
+PROFESSIONAL SUMMARY:
+Senior Software Engineer with 6+ years of experience engineering high-throughput backend services, distributed systems, and modern web applications. Expert in Python, Java, SQL, and Docker microservices.
+
+TECHNICAL SKILLS:
+- Languages: Python, Java, SQL, JavaScript, HTML, CSS
+- Frameworks & Tools: Docker, REST API, Git, PostgreSQL, Microservices, Django, Spring Boot
+- Cloud & DevOps: AWS (Amazon Web Services), Docker, Kubernetes, Linux, CI/CD
+- Concepts: Software Architecture, Unit Testing, Agile, OOP, System Design
+
+EDUCATION:
+- Master of Science (MSc) in Computer Science - University of Washington (2018 - 2020)
+- Bachelor of Science (BSc) in Software Engineering - WSU (2014 - 2018)
+
+WORK EXPERIENCE:
+Senior Software Engineer | TechCorp Solutions (2020 - Present, 4 years)
+- Architected REST API backend microservices handling 5M daily requests using Python, Java, and PostgreSQL.
+- Containerized enterprise cloud applications using Docker and deployed onto AWS EC2 and EKS.
+- Mentored junior engineers and led Agile Scrum code reviews and unit testing implementations.
+
+Software Engineer | CloudScale Inc. (2018 - 2020, 2 years)
+- Developed database access layers with SQL and optimized query performance by 40%.
+- Integrated Git CI/CD deployment pipelines for automated cloud releases.
+
+CERTIFICATIONS:
+- AWS Certified Solutions Architect - Associate
+- AWS Certified Developer

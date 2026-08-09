@@ -1,0 +1,16 @@
+Job Title: Lead Data Scientist & AI Specialist
+
+Job Overview:
+We are looking for a Lead Data Scientist to join our advanced analytics unit to build predictive models, machine learning algorithms, and data pipelines.
+
+Key Responsibilities:
+- Build statistical models and deep learning solutions using Python, R, TensorFlow, and PyTorch.
+- Extract insights from complex SQL and MongoDB data repositories using Pandas, NumPy, and Scikit-Learn.
+- Deploy machine learning REST APIs into cloud containers using Docker and AWS.
+- Communicate findings clearly with executive stakeholders.
+
+Required Skills & Qualifications:
+- Technical Skills: Python, R, SQL, Machine Learning, Deep Learning, TensorFlow, PyTorch, Pandas, NumPy, Docker, AWS, NLP.
+- Education: Master's or PhD degree in Data Science, Statistics, Mathematics, or Computer Science.
+- Experience: Minimum 4+ years of hands-on data science experience.
+- Certifications: AWS Certified Data Analytics or Machine Learning Specialty is a plus.

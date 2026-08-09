@@ -1,0 +1,22 @@
+Diana Miller
+Email: diana.m@example.com | Phone: (555) 018-4432
+
+SUMMARY:
+Technical Project Manager and Operations Lead with 5+ years of experience directing team workflows, Agile sprint planning, and stakeholder communications.
+
+SKILLS:
+- Management: Leadership, Agile, Scrum, Project Management, Communication, Teamwork
+- Tools: Jira, Trello, MS Office, Slack
+
+EDUCATION:
+- Master of Business Administration (MBA) - Business School (2017 - 2019)
+- Bachelor of Arts (BA) in Communications (2013 - 2017)
+
+EXPERIENCE:
+Technical Project Manager | Apex Systems (2019 - Present, 5 years)
+- Managed cross-functional Agile software engineering teams across 12 sprint cycles.
+- Facilitated daily standups, backlog grooming, and stakeholder reporting.
+
+CERTIFICATIONS:
+- Certified Scrum Master (CSM)
+- PMP (Project Management Professional)

@@ -1,0 +1,16 @@
+Job Title: Senior Software Engineer - Full Stack & Backend
+
+Job Overview:
+We are seeking an experienced Senior Software Engineer to design, build, and deploy high-performance scalable web applications and backend microservices.
+
+Key Responsibilities:
+- Design and develop scalable REST API backend microservices using Python, Java, and SQL databases.
+- Containerize application modules using Docker and deploy cloud services on AWS.
+- Collaborate in an Agile/Scrum team using Git, version control, and CI/CD automated pipelines.
+- Perform code reviews, unit testing, and maintain high standards of software architecture.
+
+Required Skills & Qualifications:
+- Technical Skills: Python, Java, SQL, PostgreSQL, Docker, REST API, Git, Microservices, CI/CD, AWS.
+- Education: Bachelor's or Master's degree in Computer Science, Software Engineering, or related technical field.
+- Experience: Minimum 5+ years of software development experience.
+- Certifications: AWS Certified Developer or Cloud Architect preferred.

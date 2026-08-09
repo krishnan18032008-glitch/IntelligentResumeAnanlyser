@@ -1,0 +1,16 @@
+Charlie Junior
+Email: charlie.jr@example.com | Phone: (555) 012-7741
+
+SUMMARY:
+Enthusiastic Junior Developer looking for an entry-level opportunity. Passionate about web design and frontend coding.
+
+SKILLS:
+- HTML, CSS, JavaScript, basic Python
+
+EDUCATION:
+- Associate Degree in Web Development - Community College (2022 - 2024)
+
+EXPERIENCE:
+Junior Web Developer Intern | Local Web Studio (2023 - 2024, 1 yr)
+- Built basic web pages using HTML, CSS, and basic JavaScript.
+- Assisted senior devs with minor website layout tweaks.

@@ -1,0 +1,22 @@
+Beatrice Data
+Email: beatrice.data@example.com | Phone: (555) 014-9921
+
+PROFESSIONAL SUMMARY:
+Mid-level Software Developer and Data Analyst with 3 years of experience writing Python scripts, SQL queries, and building web dashboards.
+
+TECHNICAL SKILLS:
+- Programming: Python, SQL, JavaScript, HTML, CSS
+- Databases: MySQL, SQLite
+- Tools: Git, GitHub, Pandas, Jupyter Notebooks
+
+EDUCATION:
+- Bachelor of Science (BSc) in Information Technology - State University (2017 - 2021)
+
+WORK EXPERIENCE:
+Software Developer | DataSync Corp (2021 - Present, 3 years)
+- Developed internal Python automation scripts and REST API integrations for client reporting.
+- Executed SQL database queries to analyze operational metrics.
+- Maintained code repositories using Git and GitHub.
+
+CERTIFICATIONS:
+- Python Developer Certificate

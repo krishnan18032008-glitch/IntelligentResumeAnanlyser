@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligent Resume Analyzer | Transparent Candidate Screening</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Outer Soft Pastel Atmosphere -->
+    <div class="outer-gradient-bg">
+
+        <!-- Centered Main Shell Container -->
+        <div class="app-main-wrapper">
+
+            <!-- Premium Navigation Bar -->
+            <header class="navbar" id="navbar">
+                <div class="nav-container">
+                    <a href="#home" class="nav-logo">
+                        <div class="logo-mark">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                            </svg>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-abbr">IRA</span>
+                            <span class="logo-title">Intelligent Resume Analyzer</span>
+                        </div>
+                    </a>
+
+                    <!-- Center Navigation -->
+                    <nav class="nav-menu" id="navMenu">
+                        <a href="#home" class="nav-link active">Home</a>
+                        <a href="#how-it-works" class="nav-link">How It Works</a>
+                        <a href="#features" class="nav-link">Features</a>
+                        <a href="#scoring" class="nav-link">Scoring Model</a>
+                        <a href="#analyzer-app" class="nav-link nav-highlight-link" id="navLiveAnalyzerLink">Live Analyzer</a>
+                    </nav>
+
+                    <!-- Right Actions -->
+                    <div class="nav-actions">
+                        <!-- Visual-only non-functional Sign In button -->
+                        <button id="navSignInBtn" class="btn btn-ghost">Sign In</button>
+                        <button id="navGetStartedBtn" class="btn btn-primary-sm">Get Started</button>
+
+                        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Hero Section: Split 2-Column Layout -->
+            <section class="hero-section" id="home">
+                <div class="hero-split-grid">
+                    
+                    <!-- Left Hero Content -->
+                    <div class="hero-text-col">
+                        <div class="hero-badge">
+                            <span class="badge-dot"></span> EXPLAINABLE RESUME SCREENING
+                        </div>
+
+                        <h1 class="hero-title">
+                            Turn Resumes Into <span class="text-highlight">Your Best Candidates.</span>
+                        </h1>
+
+                        <p class="hero-subtitle">
+                            Evaluate resumes against job requirements, compare candidate strengths, and identify the most relevant applicants with clear, explainable scoring.
+                        </p>
+
+                        <div class="hero-cta-group">
+                            <button id="heroStartAnalyzingBtn" class="btn btn-primary btn-lg">Analyze Resumes &rarr;</button>
+                            <a href="#how-it-works" class="btn btn-secondary btn-lg">Explore How It Works</a>
+                        </div>
+
+                        <div class="hero-trust-line">
+                            <span class="trust-item">✓ Simple</span>
+                            <span class="trust-dot">•</span>
+                            <span class="trust-item">✓ Transparent</span>
+                            <span class="trust-dot">•</span>
+                            <span class="trust-item">✓ Efficient</span>
+                        </div>
+                    </div>
+
+                    <!-- Right Hero Visual: Product UI Mockup Dashboard with Floating Insight Cards -->
+                    <div class="hero-visual-col">
+                        <div class="dashboard-preview-wrapper reveal">
+                            
+                            <!-- Floating Card 1: 92% Match Top Candidate -->
+                            <div class="floating-badge badge-top-right">
+                                <div class="badge-icon-box bg-green-light">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <div class="badge-text-box">
+                                    <span class="badge-val text-success">92% Match</span>
+                                    <span class="badge-lbl">Top Candidate</span>
+                                </div>
+                            </div>
+
+                            <!-- Floating Card 2: 8 Required Skills -->
+                            <div class="floating-badge badge-mid-left">
+                                <div class="badge-icon-box bg-blue-light">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <div class="badge-text-box">
+                                    <span class="badge-val text-primary">8 Required Skills</span>
+                                    <span class="badge-lbl">6 Skills Matched</span>
+                                </div>
+                            </div>
+
+                            <!-- Floating Card 3: Experience Met -->
+                            <div class="floating-badge badge-bottom-right">
+                                <div class="badge-icon-box bg-purple-light">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                </div>
+                                <div class="badge-text-box">
+                                    <span class="badge-val text-purple">2+ Years</span>
+                                    <span class="badge-lbl">Experience Met</span>
+                                </div>
+                            </div>
+
+                            <!-- Dashboard Window Frame -->
+                            <div class="dashboard-window-card">
+                                <div class="window-header">
+                                    <div class="window-dots">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                    </div>
+                                    <div class="window-title">Resume Analysis</div>
+                                    <div class="window-status">
+                                        <span class="status-indicator"></span> Live Rule Engine
+                                    </div>
+                                </div>
+
+                                <div class="window-body">
+                                    <!-- Candidate Header Card -->
+                                    <div class="mockup-profile-header">
+                                        <div>
+                                            <span class="dash-tag">Candidate Profile</span>
+                                            <h3>Candidate A</h3>
+                                        </div>
+                                        <div class="mockup-score-badge">
+                                            <span class="m-score">92%</span>
+                                            <span class="m-rec">Excellent Match</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Required Skills Pill Grid -->
+                                    <div class="mockup-block margin-top-xs">
+                                        <div class="block-label-flex">
+                                            <span class="block-title">Required Skills</span>
+                                            <span class="block-status text-success">✓ 5 Skills Verified</span>
+                                        </div>
+                                        <div class="mockup-skills-grid">
+                                            <span class="m-pill">Python ✓</span>
+                                            <span class="m-pill">Java ✓</span>
+                                            <span class="m-pill">SQL ✓</span>
+                                            <span class="m-pill">Machine Learning ✓</span>
+                                            <span class="m-pill">Git ✓</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Education & Experience Split Row -->
+                                    <div class="mockup-split-row margin-top-xs">
+                                        <div class="mockup-mini-card">
+                                            <span class="mini-lbl">Education</span>
+                                            <span class="mini-val">Bachelor's Degree</span>
+                                            <span class="mini-badge text-success">✓ Relevant</span>
+                                        </div>
+                                        <div class="mockup-mini-card">
+                                            <span class="mini-lbl">Experience</span>
+                                            <span class="mini-val">3 Years</span>
+                                            <span class="mini-badge text-success">✓ Meets Requirement</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Mini Leaderboard Preview -->
+                                    <div class="mockup-ranking-box margin-top-xs">
+                                        <span class="mini-lbl" style="margin-bottom:6px; display:block;">Candidate Ranking</span>
+                                        <div class="mini-rank-list">
+                                            <div class="m-rank-row"><span>#1 Candidate A</span><span class="text-success font-weight-800">92%</span></div>
+                                            <div class="m-rank-row"><span>#2 Candidate B</span><span class="text-primary font-weight-800">84%</span></div>
+                                            <div class="m-rank-row"><span>#3 Candidate C</span><span class="text-warning font-weight-800">71%</span></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Problem / Challenge Section -->
+            <section class="section problem-section" id="problem">
+                <div class="section-header text-center">
+                    <span class="badge-tag">RECRUITMENT CHALLENGES</span>
+                    <h2 class="section-title">Too Many Resumes.<br>Too Little Time.</h2>
+                    <p class="section-subtitle">
+                        Manually reviewing large numbers of applications can slow down hiring decisions and lead to inconsistent evaluations.
+                    </p>
+                </div>
+
+                <div class="problem-grid">
+                    <div class="problem-card reveal">
+                        <div class="card-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </div>
+                        <h3>Manual Screening</h3>
+                        <p>Reviewing large numbers of resumes takes valuable time away from team priorities.</p>
+                    </div>
+
+                    <div class="problem-card reveal">
+                        <div class="card-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        </div>
+                        <h3>Missed Candidates</h3>
+                        <p>Qualified candidates can easily be overlooked during manual resume screening.</p>
+                    </div>
+
+                    <div class="problem-card reveal">
+                        <div class="card-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                        </div>
+                        <h3>Inconsistent Evaluation</h3>
+                        <p>Manual comparison makes candidate evaluation difficult to standardize across roles.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How It Works Section -->
+            <section class="section how-section" id="how-it-works">
+                <div class="section-header text-center">
+                    <span class="badge-tag">STEP-BY-STEP PROCESS</span>
+                    <h2 class="section-title">From Job Description to Best Match</h2>
+                    <p class="section-subtitle">A transparent 5-step evaluation workflow engineered for speed and explainability.</p>
+                </div>
+
+                <div class="process-flow">
+                    <div class="process-step reveal">
+                        <span class="step-num-badge">01</span>
+                        <div class="step-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                        </div>
+                        <h4>Job Description</h4>
+                        <p>Enter role requirements, skills, and qualifications.</p>
+                    </div>
+
+                    <div class="flow-connector">&rarr;</div>
+
+                    <div class="process-step reveal">
+                        <span class="step-num-badge">02</span>
+                        <div class="step-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                        </div>
+                        <h4>Candidate Resumes</h4>
+                        <p>Add multiple candidate resumes for comparison.</p>
+                    </div>
+
+                    <div class="flow-connector">&rarr;</div>
+
+                    <div class="process-step reveal">
+                        <span class="step-num-badge">03</span>
+                        <div class="step-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        </div>
+                        <h4>Requirement Matching</h4>
+                        <p>Extract and align technical skills & credentials.</p>
+                    </div>
+
+                    <div class="flow-connector">&rarr;</div>
+
+                    <div class="process-step reveal">
+                        <span class="step-num-badge">04</span>
+                        <div class="step-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                        </div>
+                        <h4>Transparent Scoring</h4>
+                        <p>Compute explainable weighted category scores.</p>
+                    </div>
+
+                    <div class="flow-connector">&rarr;</div>
+
+                    <div class="process-step reveal">
+                        <span class="step-num-badge">05</span>
+                        <div class="step-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        </div>
+                        <h4>Candidate Ranking</h4>
+                        <p>View ranked candidates with full explanations.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Intelligent Matching Section -->
+            <section class="section matching-section" id="features">
+                <div class="section-header text-center">
+                    <span class="badge-tag">REQUIREMENT ALIGNMENT</span>
+                    <h2 class="section-title">See What Matches.<br>See What Doesn't.</h2>
+                    <p class="section-subtitle">Instantly identify matched qualifications and missing requirements for every candidate.</p>
+                </div>
+
+                <div class="matching-demo-card reveal">
+                    <div class="matching-card-header">
+                        <div>
+                            <h3>Candidate Alignment Profile</h3>
+                            <span class="example-label">* Visual Analysis Breakdown</span>
+                        </div>
+                        <span class="status-pill bg-green-light text-success">Overall Match: 92%</span>
+                    </div>
+
+                    <div class="matching-split-grid margin-top-md">
+                        <!-- Matched Skills Column -->
+                        <div class="m-col col-matched">
+                            <span class="m-col-title text-success">✓ Matched Skills</span>
+                            <div class="tags-flex margin-top-xs">
+                                <span class="tag-pill-sm pill-green">✓ Python</span>
+                                <span class="tag-pill-sm pill-green">✓ SQL</span>
+                                <span class="tag-pill-sm pill-green">✓ Java</span>
+                                <span class="tag-pill-sm pill-green">✓ Git</span>
+                            </div>
+                        </div>
+
+                        <!-- Missing Skills Column -->
+                        <div class="m-col col-missing">
+                            <span class="m-col-title text-danger">× Missing Skills</span>
+                            <div class="tags-flex margin-top-xs">
+                                <span class="tag-pill-sm pill-red">× Machine Learning</span>
+                                <span class="tag-pill-sm pill-red">× REST API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="matching-footer-row margin-top-md">
+                        <div class="m-foot-item">
+                            <span class="f-lbl">Education</span>
+                            <span class="f-val text-success">✓ Bachelor's Degree</span>
+                        </div>
+                        <div class="m-foot-item">
+                            <span class="f-lbl">Experience</span>
+                            <span class="f-val text-success">✓ 2+ Years</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Scoring Model Section -->
+            <section class="section scoring-section" id="scoring">
+                <div class="section-header text-center">
+                    <span class="badge-tag">TRANSPARENT EVALUATION</span>
+                    <h2 class="section-title">Every Score Has a Reason.</h2>
+                    <p class="section-subtitle">Transparent scoring helps recruiters understand the exact basis of each candidate score.</p>
+                </div>
+
+                <div class="scoring-box-container reveal">
+                    <!-- Left Score Card -->
+                    <div class="giant-score-card">
+                        <span class="g-score">92%</span>
+                        <span class="g-tag">Excellent Match</span>
+                        <span class="g-sub">Calculated Composite Score</span>
+                    </div>
+
+                    <!-- Right Category Points Breakdown -->
+                    <div class="score-card-preview">
+                        <div class="score-card-header">
+                            <div>
+                                <h4>Category Point Breakdown</h4>
+                                <span class="example-label">* 100-Point Weighted System</span>
+                            </div>
+                            <div class="score-main-badge">
+                                <span class="score-big">92 / 100</span>
+                                <span class="score-sub">Total Points</span>
+                            </div>
+                        </div>
+
+                        <div class="score-rows-list">
+                            <div class="score-row-item">
+                                <span>Skill Match</span>
+                                <span class="score-val">38 / 40 pts</span>
+                            </div>
+                            <div class="score-row-item">
+                                <span>Education</span>
+                                <span class="score-val">20 / 20 pts</span>
+                            </div>
+                            <div class="score-row-item">
+                                <span>Experience</span>
+                                <span class="score-val">20 / 20 pts</span>
+                            </div>
+                            <div class="score-row-item">
+                                <span>Keywords</span>
+                                <span class="score-val">8 / 10 pts</span>
+                            </div>
+                            <div class="score-row-item">
+                                <span>Certifications</span>
+                                <span class="score-val">6 / 10 pts</span>
+                            </div>
+                            <div class="score-row-item total-row">
+                                <span>Total Calculated Score</span>
+                                <span class="score-val-total">92 / 100 pts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Candidate Ranking Preview Section -->
+            <section class="section ranking-preview-section">
+                <div class="section-header text-center">
+                    <span class="badge-tag">CANDIDATE RANKING</span>
+                    <h2 class="section-title">See the Best Matches at a Glance</h2>
+                    <p class="section-subtitle">Candidates are dynamically sorted from top match to lowest fit based on rule evaluation.</p>
+                </div>
+
+                <div class="preview-ranking-card reveal">
+                    <div class="p-rank-row rank-1">
+                        <div class="p-rank-num">01</div>
+                        <div class="p-rank-info">
+                            <strong>Candidate A</strong>
+                            <span>8/8 Skills Matched • Bachelor's Degree • 3 Yrs Exp</span>
+                        </div>
+                        <div class="p-rank-score text-success">92%</div>
+                        <div class="p-rank-badge badge-excellent">Excellent Match</div>
+                    </div>
+
+                    <div class="p-rank-row rank-2 margin-top-xs">
+                        <div class="p-rank-num">02</div>
+                        <div class="p-rank-info">
+                            <strong>Candidate B</strong>
+                            <span>6/8 Skills Matched • Bachelor's Degree • 2 Yrs Exp</span>
+                        </div>
+                        <div class="p-rank-score text-primary">84%</div>
+                        <div class="p-rank-badge badge-strong">Strong Match</div>
+                    </div>
+
+                    <div class="p-rank-row rank-3 margin-top-xs">
+                        <div class="p-rank-num">03</div>
+                        <div class="p-rank-info">
+                            <strong>Candidate C</strong>
+                            <span>4/8 Skills Matched • Bachelor's Degree • 1 Yr Exp</span>
+                        </div>
+                        <div class="p-rank-score text-warning">71%</div>
+                        <div class="p-rank-badge badge-mod">Moderate Match</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- LIVE MULTI-STEP ANALYZER EXPERIENCE -->
+            <section class="section analyzer-app-section" id="analyzer-app">
+                <div class="section-header text-center">
+                    <span class="badge-tag tag-primary">STEP-BY-STEP WORKFLOW</span>
+                    <h2 class="section-title">Intelligent Candidate Evaluator</h2>
+                    <p class="section-subtitle">Screen candidate resumes against job requirements in a clean, explainable multi-step experience.</p>
+                </div>
+
+                <!-- Main Multi-Step App Card -->
+                <div class="analyzer-workspace-card">
+                    
+                    <!-- TOP STEP PROGRESS INDICATOR BAR -->
+                    <div class="step-progress-wrapper">
+                        <div class="step-progress-bar">
+                            <div class="step-node step-active" id="pStep1">
+                                <div class="step-icon-circle">1</div>
+                                <span class="step-label">Job Description</span>
+                            </div>
+                            <div class="step-connector" id="conn1"></div>
+
+                            <div class="step-node" id="pStep2">
+                                <div class="step-icon-circle">2</div>
+                                <span class="step-label">Candidate Resumes</span>
+                            </div>
+                            <div class="step-connector" id="conn2"></div>
+
+                            <div class="step-node" id="pStep3">
+                                <div class="step-icon-circle">3</div>
+                                <span class="step-label">Analysis</span>
+                            </div>
+                            <div class="step-connector" id="conn3"></div>
+
+                            <div class="step-node" id="pStep4">
+                                <div class="step-icon-circle">4</div>
+                                <span class="step-label">Results</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 1 SCREEN: JOB DESCRIPTION -->
+                    <div id="step1Screen" class="step-screen-view">
+                        <div class="step-screen-header">
+                            <span class="step-indicator-tag">Step 1 of 4</span>
+                            <h2>Add Job Description</h2>
+                            <p>Tell us what you're looking for in the ideal candidate.</p>
+                        </div>
+
+                        <!-- Target Requirements Summary Badge Bar -->
+                        <div class="req-summary-bar">
+                            <div class="req-item">
+                                <span class="req-lbl">Required Skills</span>
+                                <span class="req-val">8 Skills</span>
+                            </div>
+                            <div class="req-item">
+                                <span class="req-lbl">Education</span>
+                                <span class="req-val">Bachelor's Degree</span>
+                            </div>
+                            <div class="req-item">
+                                <span class="req-lbl">Minimum Experience</span>
+                                <span class="req-val">2 Years</span>
+                            </div>
+                        </div>
+
+                        <div class="step-screen-body margin-top-md">
+                            <div class="form-group-block">
+                                <label for="jobTitleInput"><strong>Job Title / Position</strong></label>
+                                <input type="text" id="jobTitleInput" class="input-text-lg" placeholder="e.g. Software Engineer" value="Software Engineer">
+                            </div>
+
+                            <div class="form-group-block margin-top-md">
+                                <div class="block-label-row">
+                                    <label for="jdInput"><strong>Job Description & Requirements</strong></label>
+                                    <div class="btn-group-sm">
+                                        <button id="btnLoadJdDev" class="btn btn-secondary-sm">⚡ Load Sample JD (8 Skills)</button>
+                                    </div>
+                                </div>
+                                <textarea id="jdInput" rows="9" placeholder="Paste full Job Description here..."></textarea>
+                            </div>
+
+                            <!-- Weights Configurator Toggle -->
+                            <div class="weights-toggle-box margin-top-md">
+                                <button id="toggleWeightsBtn" class="btn-text-toggle">
+                                    ⚙️ Customize Category Scoring Weights
+                                </button>
+                                <div id="weightsPanel" class="weights-panel hidden">
+                                    <div class="weight-slider-row">
+                                        <label>Skill Match (8 Skills) (<span id="valSkill">40</span>%)</label>
+                                        <input type="range" id="weightSkill" min="0" max="100" value="40">
+                                    </div>
+                                    <div class="weight-slider-row">
+                                        <label>Education Match (Bachelor's) (<span id="valEdu">20</span>%)</label>
+                                        <input type="range" id="weightEdu" min="0" max="100" value="20">
+                                    </div>
+                                    <div class="weight-slider-row">
+                                        <label>Experience Match (2 Yrs) (<span id="valExp">20</span>%)</label>
+                                        <input type="range" id="weightExp" min="0" max="100" value="20">
+                                    </div>
+                                    <div class="weight-slider-row">
+                                        <label>Keyword Relevance (<span id="valKw">10</span>%)</label>
+                                        <input type="range" id="weightKw" min="0" max="100" value="10">
+                                    </div>
+                                    <div class="weight-slider-row">
+                                        <label>Certifications (<span id="valCert">10</span>%)</label>
+                                        <input type="range" id="weightCert" min="0" max="100" value="10">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step-screen-footer">
+                            <a href="#home" class="btn btn-ghost">&larr; Back to Home</a>
+                            <button id="step1NextBtn" class="btn btn-primary btn-lg">Continue to Resumes &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- STEP 2 SCREEN: CANDIDATE RESUMES -->
+                    <div id="step2Screen" class="step-screen-view hidden">
+                        <div class="step-screen-header">
+                            <span class="step-indicator-tag">Step 2 of 4</span>
+                            <h2>Add Candidate Resumes</h2>
+                            <p>Add the candidate resumes you want to compare against the job requirements.</p>
+                        </div>
+
+                        <div class="step-screen-body">
+                            <div class="cards-control-bar">
+                                <div class="btn-group-sm">
+                                    <button id="addResumeBtn" class="btn btn-outline-sm">+ Add Candidate</button>
+                                    <label class="btn btn-outline-sm file-upload-label">
+                                        📁 Upload .txt File(s)
+                                        <input type="file" id="fileUploadInput" multiple accept=".txt" class="hidden">
+                                    </label>
+                                </div>
+                                <button id="loadSamplesBtn" class="btn btn-secondary-sm">⚡ 1-Click Load Sample Candidates</button>
+                            </div>
+
+                            <!-- Candidates Container Grid -->
+                            <div id="resumeListContainer" class="candidate-cards-grid margin-top-md">
+                                <!-- Dynamic candidate input cards injected via script.js -->
+                            </div>
+                        </div>
+
+                        <div class="step-screen-footer">
+                            <button id="step2BackBtn" class="btn btn-secondary">&larr; Back to Job Description</button>
+                            <button id="step2NextBtn" class="btn btn-primary btn-lg">Analyze Candidates &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- STEP 3 SCREEN: PROCESSING ANALYSIS -->
+                    <div id="step3Screen" class="step-screen-view hidden text-center">
+                        <div class="step-screen-header">
+                            <span class="step-indicator-tag">Step 3 of 4</span>
+                            <h2>Analyzing Candidates</h2>
+                            <p>Running rule-based requirement matching and explainable scoring...</p>
+                        </div>
+
+                        <div class="step-screen-body processing-box">
+                            <div class="spinner-ring"></div>
+
+                            <div class="processing-checklist">
+                                <div class="p-check-item check-done" id="chkJd">
+                                    <span class="chk-icon">✓</span> Job Description Processed
+                                </div>
+                                <div class="p-check-item check-done" id="chkResumes">
+                                    <span class="chk-icon">✓</span> Candidate Resumes Processed
+                                </div>
+                                <div class="p-check-item check-done" id="chkSkills">
+                                    <span class="chk-icon">✓</span> Required Skills (8) Compared
+                                </div>
+                                <div class="p-check-item check-done" id="chkEdu">
+                                    <span class="chk-icon">✓</span> Education (Bachelor's) Compared
+                                </div>
+                                <div class="p-check-item check-done" id="chkExp">
+                                    <span class="chk-icon">✓</span> Experience (2 Yrs) Compared
+                                </div>
+                                <div class="p-check-item check-running" id="chkScoring">
+                                    <span class="chk-icon">⟳</span> Calculating Scores...
+                                </div>
+                                <div class="p-check-item check-pending" id="chkRanking">
+                                    <span class="chk-icon">○</span> Ranking Candidates...
+                                </div>
+                            </div>
+
+                            <div class="progress-bar-wide">
+                                <div id="analysisProgressBar" class="progress-bar-fill" style="width: 30%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 4 SCREEN: RESULTS DASHBOARD -->
+                    <div id="step4Screen" class="step-screen-view hidden">
+                        <div class="step-screen-header">
+                            <div class="header-split">
+                                <div>
+                                    <span class="step-indicator-tag">Step 4 of 4</span>
+                                    <h2>Candidate Ranking</h2>
+                                    <p>Here are the candidates ranked by their relevance to the job requirements.</p>
+                                </div>
+                                <div class="btn-group-sm">
+                                    <button id="openCompareBtn" class="btn btn-secondary-sm">⚔️ Side-by-Side Matrix</button>
+                                    <button id="exportPdfBtn" class="btn btn-outline-sm">🖨️ Export Report</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step-screen-body">
+                            <!-- Top Stats Cards -->
+                            <div class="dash-stats-bar">
+                                <div class="d-stat">
+                                    <span class="d-label">Total Candidates</span>
+                                    <span id="statTotal" class="d-val">0</span>
+                                </div>
+                                <div class="d-stat">
+                                    <span class="d-label">Top Candidate</span>
+                                    <span id="statTopRec" class="d-val val-highlight">-</span>
+                                </div>
+                                <div class="d-stat">
+                                    <span class="d-label">Average Score</span>
+                                    <span id="statAvgScore" class="d-val">0%</span>
+                                </div>
+                            </div>
+
+                            <!-- Leaderboard Table -->
+                            <div class="leaderboard-table-wrapper margin-top-md">
+                                <table class="leaderboard-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width:60px;">Rank</th>
+                                            <th>Candidate Name</th>
+                                            <th style="width:110px;">Skill Match</th>
+                                            <th style="width:110px;">Education</th>
+                                            <th style="width:130px;">Experience</th>
+                                            <th style="width:110px;">Overall Score</th>
+                                            <th style="width:160px;">Recommendation</th>
+                                            <th style="width:120px; text-align:right;">Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="leaderboardTableBody">
+                                        <!-- Dynamic rows injected via script.js -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="step-screen-footer">
+                            <button id="step4BackBtn" class="btn btn-secondary">&larr; Back to Resumes</button>
+                            <button id="step4NewBtn" class="btn btn-outline-sm">🔄 Start New Analysis</button>
+                        </div>
+                    </div>
+
+                    <!-- STEP 5 SCREEN: CANDIDATE DETAILS -->
+                    <div id="step5Screen" class="step-screen-view hidden">
+                        <div class="step-screen-header">
+                            <div class="header-split">
+                                <div>
+                                    <button id="step5BackBtn" class="btn btn-ghost-sm margin-bottom-xs">&larr; Back to Results</button>
+                                    <h2 id="modalCandidateName">Candidate Analysis</h2>
+                                    <div class="modal-badges">
+                                        <span id="modalRankBadge" class="badge-rank">Rank 1</span>
+                                        <span id="modalRecBadge" class="badge-rec">Strong Match</span>
+                                    </div>
+                                </div>
+                                <div class="score-giant-box">
+                                    <span id="modalTotalScore" class="score-num">0%</span>
+                                    <span class="score-lbl">Overall Match Score</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step-screen-body">
+
+                            <!-- 3 Core Requirement Category Summary Cards -->
+                            <div class="core-reqs-grid">
+                                <div class="core-req-card">
+                                    <div class="req-card-head">
+                                        <span class="lbl">REQUIRED SKILLS (8)</span>
+                                        <span id="cardSkillScore" class="val">0 / 8</span>
+                                    </div>
+                                    <div id="cardSkillPills" class="tags-flex margin-top-xs"></div>
+                                </div>
+
+                                <div class="core-req-card">
+                                    <div class="req-card-head">
+                                        <span class="lbl">EDUCATION (Bachelor's Degree)</span>
+                                        <span id="cardEduStatus" class="val badge-status">✓ Relevant</span>
+                                    </div>
+                                    <div id="cardEduDetail" class="sub-text margin-top-xs">Candidate: Bachelor's Degree</div>
+                                </div>
+
+                                <div class="core-req-card">
+                                    <div class="req-card-head">
+                                        <span class="lbl">EXPERIENCE (2 Yrs Required)</span>
+                                        <span id="cardExpStatus" class="val badge-status">✓ Meets Requirement</span>
+                                    </div>
+                                    <div id="cardExpDetail" class="sub-text margin-top-xs">Candidate: 3 Years</div>
+                                </div>
+                            </div>
+
+                            <!-- Technical Skills Match & Missing Breakdown -->
+                            <div class="modal-section-group margin-top-md">
+                                <h4>Skill Breakdown (8 Required Skills)</h4>
+                                <div class="skills-split-grid">
+                                    <div class="skill-col col-matched">
+                                        <span class="col-head">✓ Matched Skills</span>
+                                        <div id="modalMatchedSkills" class="tags-flex"></div>
+                                    </div>
+                                    <div class="skill-col col-missing">
+                                        <span class="col-head">✗ Missing Skills</span>
+                                        <div id="modalMissingSkills" class="tags-flex"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Score Breakdown Bars -->
+                            <div class="breakdown-box margin-top-md">
+                                <h4>Itemized Score Breakdown (100 Points)</h4>
+                                <div class="progress-item">
+                                    <div class="p-labels"><span>Skill Match (8 Skills - 40%)</span><span id="modalSkillScore">0 / 40 pts</span></div>
+                                    <div class="p-track"><div id="barSkill" class="p-bar bg-primary"></div></div>
+                                </div>
+                                <div class="progress-item">
+                                    <div class="p-labels"><span>Education Match (Bachelor's - 20%)</span><span id="modalEduScore">0 / 20 pts</span></div>
+                                    <div class="p-track"><div id="barEdu" class="p-bar bg-accent"></div></div>
+                                </div>
+                                <div class="progress-item">
+                                    <div class="p-labels"><span>Experience Match (2 Yrs - 20%)</span><span id="modalExpScore">0 / 20 pts</span></div>
+                                    <div class="p-track"><div id="barExp" class="p-bar bg-success"></div></div>
+                                </div>
+                                <div class="progress-item">
+                                    <div class="p-labels"><span>Keyword Overlap (10%)</span><span id="modalKwScore">0 / 10 pts</span></div>
+                                    <div class="p-track"><div id="barKw" class="p-bar bg-purple"></div></div>
+                                </div>
+                                <div class="progress-item">
+                                    <div class="p-labels"><span>Certifications (10%)</span><span id="modalCertScore">0 / 10 pts</span></div>
+                                    <div class="p-track"><div id="barCert" class="p-bar bg-warning"></div></div>
+                                </div>
+                            </div>
+
+                            <!-- Explainability Analysis -->
+                            <div class="modal-section-group margin-top-md">
+                                <h4>Explainability Analysis</h4>
+                                <div class="explanation-card">
+                                    <p id="modalExplanationSummary" class="summary-text"></p>
+                                    <ul id="modalExplanationBullets" class="bullets-tree"></ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step-screen-footer">
+                            <button id="step5FooterBackBtn" class="btn btn-secondary">&larr; Back to Results</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Final CTA Section -->
+            <section class="section final-cta-section">
+                <div class="container text-center">
+                    <div class="cta-box reveal">
+                        <h2>Ready to Find Your Best Match?</h2>
+                        <p>Compare resumes against job requirements and make candidate screening faster and more transparent.</p>
+                        <button id="finalStartAnalyzingBtn" class="btn btn-primary btn-lg">Start Analyzing &rarr;</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container footer-container">
+                    <div class="footer-brand">
+                        <a href="#home" class="nav-logo">
+                            <div class="logo-mark">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                            </div>
+                            <span class="logo-text-footer">IRA | Intelligent Resume Analyzer</span>
+                        </a>
+                        <p class="footer-tagline">Simple. Transparent. Efficient.</p>
+                    </div>
+
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#how-it-works">How It Works</a>
+                        <a href="#features">Features</a>
+                        <a href="#scoring">Scoring Model</a>
+                        <a href="#analyzer-app">Live Analyzer</a>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p>&copy; Intelligent Resume Analyzer Project. 100% Rule-Based Stdlib System.</p>
+                    </div>
+                </div>
+            </footer>
+
+        </div> <!-- End Centered App Container Shell -->
+    </div> <!-- End Outer Gradient Atmosphere -->
+
+    <!-- Side-by-Side Matrix Modal -->
+    <div id="compareModal" class="modal-backdrop hidden">
+        <div class="modal-card modal-large">
+            <div class="modal-card-header">
+                <h3>Side-by-Side Candidate Comparison Matrix</h3>
+                <button id="closeCompareBtn" class="close-btn">&times;</button>
+            </div>
+            <div class="modal-card-body">
+                <div id="compareTableContainer" class="table-scroll">
+                    <!-- Dynamic Matrix Table -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

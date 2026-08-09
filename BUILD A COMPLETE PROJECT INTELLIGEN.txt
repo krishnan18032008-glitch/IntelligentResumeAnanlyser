@@ -1,0 +1,798 @@
+BUILD A COMPLETE PROJECT: INTELLIGENT RESUME ANALYZER
+
+You are an expert software engineer and project architect.
+
+I am providing the official problem statement and constraints for this project.
+You MUST follow them strictly.
+
+The official problem statement and constraints have higher priority than any feature suggestion in this prompt.
+
+========================================================
+OFFICIAL PROJECT
+========================================================
+
+Project Title:
+Intelligent Resume Analyzer
+
+========================================================
+OFFICIAL PROBLEM STATEMENT
+========================================================
+
+Organizations often receive a large number of resumes for a single job opening. Manually comparing each resume with the corresponding Job Description (JD) is time-consuming, labor-intensive, and prone to human error.
+
+As the number of applications increases, recruiters may overlook qualified candidates or spend excessive time reviewing resumes that do not meet the required qualifications.
+
+Additionally, many existing resume screening tools are costly, require internet connectivity, or depend on complex software frameworks, making them less accessible for small organizations and educational purposes.
+
+There is a need for a simple, efficient, and reliable method to evaluate resumes against job requirements and assist recruiters in identifying the most relevant candidates in a shorter time.
+
+========================================================
+OFFICIAL RULES / CONSTRAINTS
+========================================================
+
+THE FOLLOWING RULES ARE STRICT AND NON-NEGOTIABLE.
+
+RULE 1:
+The project MUST NOT use ANY external packages, libraries, or third-party APIs for resume analysis.
+
+RULE 2:
+ALL processing and comparison logic MUST be implemented using ONLY the programming language's built-in features.
+
+RULE 3:
+The submitted GitHub repository MUST contain the COMPLETE SOURCE CODE.
+
+RULE 4:
+The DEMO VIDEO must clearly demonstrate the application's functionality.
+
+========================================================
+CRITICAL DEPENDENCY RESTRICTION
+========================================================
+
+DO NOT use:
+
+- External packages
+- External libraries
+- Third-party APIs
+- Cloud APIs
+- Online AI APIs
+- OpenAI API
+- Gemini API
+- Claude API
+- Hugging Face API
+- NLTK
+- spaCy
+- scikit-learn
+- TensorFlow
+- PyTorch
+- External resume parsing APIs
+- Third-party PDF parsing libraries
+- Third-party DOC/DOCX parsing libraries
+- External database libraries
+- Any dependency that violates the official constraints
+
+Do NOT add a package just because it makes development easier.
+
+If a feature can only be implemented by violating the rules, DO NOT implement it that way.
+
+Instead, create a simpler solution using built-in functionality.
+
+RULE COMPLIANCE IS MORE IMPORTANT THAN EXTRA FEATURES.
+
+========================================================
+PROJECT OBJECTIVE
+========================================================
+
+Build a simple, efficient, reliable and explainable Intelligent Resume Analyzer.
+
+The system should help recruiters:
+
+1. Provide a Job Description.
+2. Provide multiple candidate resumes.
+3. Analyze the Job Description.
+4. Analyze the resumes.
+5. Compare resumes against the Job Description.
+6. Calculate relevance/matching scores.
+7. Rank candidates.
+8. Identify the most relevant candidates.
+9. Show why each candidate received the score.
+
+The system must reduce the manual effort involved in resume screening.
+
+========================================================
+CORE WORKFLOW
+========================================================
+
+The complete application workflow must be:
+
+                    START
+                      |
+                      v
+             Enter Job Description
+                      |
+                      v
+          Process Job Description
+                      |
+                      v
+        Identify Job Requirements
+                      |
+                      v
+             Add Candidate Resumes
+                      |
+                      v
+             Process Each Resume
+                      |
+                      v
+       Extract Relevant Information
+                      |
+                      v
+        Compare Resume with JD
+                      |
+                      v
+          Calculate Match Score
+                      |
+                      v
+             Rank Candidates
+                      |
+                      v
+      Identify Most Relevant Candidates
+                      |
+                      v
+        Display Detailed Explanation
+                      |
+                      v
+                     END
+
+========================================================
+1. JOB DESCRIPTION INPUT
+========================================================
+
+Provide a clear interface for entering or providing a Job Description.
+
+The system should identify relevant requirements such as:
+
+- Required skills
+- Technical skills
+- Programming languages
+- Educational requirements
+- Experience requirements
+- Certifications
+- Important job-related keywords
+
+Use only built-in programming-language functionality.
+
+========================================================
+2. RESUME INPUT
+========================================================
+
+Allow multiple candidate resumes to be provided.
+
+The resume input method MUST NOT require external parsing libraries.
+
+Choose a practical input format that can be processed reliably using only built-in functionality.
+
+Do NOT use external PDF/DOCX parsing packages.
+
+For each resume, identify information such as:
+
+- Candidate name
+- Skills
+- Programming languages
+- Education
+- Experience
+- Certifications
+- Relevant keywords
+- Other job-related information
+
+========================================================
+3. TEXT PROCESSING
+========================================================
+
+Implement resume and JD processing internally.
+
+Allowed techniques include built-in functionality such as:
+
+- String operations
+- Lowercase/uppercase conversion
+- Whitespace normalization
+- Tokenization using built-in string operations
+- Keyword matching
+- Set operations
+- Frequency counting
+- Basic pattern matching
+- Built-in regular expression support if available in the language's standard library
+
+Do NOT use external NLP libraries.
+
+The processing must be transparent and understandable.
+
+========================================================
+4. RESUME VS JOB DESCRIPTION MATCHING
+========================================================
+
+For every candidate, compare the resume against the Job Description.
+
+Identify:
+
+- Matching skills
+- Missing skills
+- Education relevance
+- Experience relevance
+- Certification relevance
+- Relevant keyword overlap
+- Overall relevance
+
+The result must be based on actual resume/JD data.
+
+Do NOT hard-code candidate scores.
+
+========================================================
+5. INTELLIGENT SCORING
+========================================================
+
+Create a transparent and explainable scoring mechanism.
+
+A suitable scoring approach can be:
+
+Skill Match        = 40%
+Education Match    = 20%
+Experience Match   = 20%
+Keyword Relevance  = 10%
+Certifications     = 10%
+
+Total = 100%
+
+The scoring logic must be implemented manually using built-in programming-language functionality.
+
+The weights should be easy to modify in the source code.
+
+Every candidate's score must be calculated from the actual comparison.
+
+Do NOT generate random scores.
+
+Do NOT use an external machine-learning model.
+
+========================================================
+6. CANDIDATE RANKING
+========================================================
+
+After analyzing all resumes:
+
+1. Calculate the score for each candidate.
+2. Compare scores.
+3. Sort candidates by score.
+4. Display the highest-scoring candidate first.
+5. Display the complete ranking.
+
+Example:
+
+Rank 1 → Candidate A → 88%
+Rank 2 → Candidate B → 79%
+Rank 3 → Candidate C → 65%
+
+These are only examples.
+
+The actual scores must be dynamically calculated.
+
+========================================================
+7. MATCH RESULT
+========================================================
+
+For every candidate display:
+
+Candidate Name
+Overall Match Score
+Matched Skills
+Missing Skills
+Education Match
+Experience Match
+Certification Match
+Relevant Keywords
+Recommendation
+
+Example:
+
+Candidate:
+John
+
+Match Score:
+87%
+
+Matched Skills:
+✓ Python
+✓ Java
+✓ SQL
+✓ Machine Learning
+
+Missing Skills:
+✗ Cloud Computing
+
+Education:
+✓ Relevant
+
+Experience:
+✓ Relevant
+
+Certifications:
+✓ Relevant
+
+Recommendation:
+Strong Match
+
+The actual output must come from the candidate's resume and the provided JD.
+
+========================================================
+8. RECOMMENDATION SYSTEM
+========================================================
+
+Use a transparent score-based recommendation.
+
+For example:
+
+90–100 → Excellent Match
+75–89  → Strong Match
+60–74  → Moderate Match
+Below 60 → Low Match
+
+The recommendation must be generated from the calculated score.
+
+========================================================
+9. EXPLAINABLE ANALYSIS
+========================================================
+
+The system must explain WHY a candidate received the score.
+
+For example:
+
+Overall Score: 82%
+
+Skill Match:
+32/40
+
+Education:
+18/20
+
+Experience:
+16/20
+
+Keywords:
+8/10
+
+Certification:
+8/10
+
+Total:
+82/100
+
+This explanation must be dynamically generated.
+
+Do NOT display unexplained scores.
+
+========================================================
+10. CANDIDATE DASHBOARD
+========================================================
+
+Create a clean, professional and simple interface.
+
+The application should contain:
+
+JOB DESCRIPTION SECTION
+- JD input area
+- Process JD option
+
+RESUME SECTION
+- Multiple resume input
+- Candidate identification
+
+ANALYSIS SECTION
+- Analyze button
+
+RESULT SECTION
+- Candidate ranking
+- Match score
+- Recommendation
+
+DETAIL SECTION
+- Matched skills
+- Missing skills
+- Education
+- Experience
+- Certifications
+- Keywords
+- Score breakdown
+
+The interface should be easy to understand and suitable for a college project demonstration.
+
+========================================================
+11. NO FAKE AI
+========================================================
+
+The project is called "Intelligent Resume Analyzer".
+
+The project can use intelligent:
+
+- Text processing
+- Requirement matching
+- Keyword matching
+- Weighted scoring
+- Ranking
+- Explainable decision logic
+
+However, DO NOT falsely claim that an external AI model is being used.
+
+Do NOT claim:
+
+- Deep learning
+- LLM
+- Generative AI
+- Machine learning model
+- Neural network
+
+unless it can genuinely be implemented while satisfying every official constraint.
+
+Describe the system honestly as an intelligent, rule-based, explainable resume analysis system if that is the implemented approach.
+
+========================================================
+12. LOCAL FUNCTIONALITY
+========================================================
+
+The core resume analysis must work locally.
+
+Do not require internet connectivity for analysis.
+
+Do not send resume information to external services.
+
+Do not call online APIs.
+
+========================================================
+13. ERROR HANDLING
+========================================================
+
+Handle invalid inputs properly.
+
+Examples:
+
+- Empty Job Description
+- Empty resume
+- Missing candidate name
+- Resume with missing information
+- No matching skills
+- Invalid input
+- Duplicate candidate
+
+Show clear messages instead of crashing.
+
+========================================================
+14. MULTIPLE RESUME SUPPORT
+========================================================
+
+The system must support analyzing multiple candidates against the SAME Job Description.
+
+Example:
+
+Job Description
+       |
+       +---- Resume 1
+       |
+       +---- Resume 2
+       |
+       +---- Resume 3
+       |
+       +---- Resume 4
+       |
+       v
+Individual Analysis
+       |
+       v
+Scoring
+       |
+       v
+Ranking
+       |
+       v
+Best Candidates
+
+========================================================
+15. SAMPLE DATA
+========================================================
+
+Create sample Job Description data and multiple sample resumes for testing.
+
+Include:
+
+1. Strong matching candidate
+2. Moderate matching candidate
+3. Weak matching candidate
+4. Candidate with missing skills
+5. Candidate with different/irrelevant skills
+
+Do not hard-code their final scores.
+
+Scores must be generated by the analyzer.
+
+========================================================
+16. TESTING
+========================================================
+
+Test the application end-to-end.
+
+Verify:
+
+- JD input works.
+- Multiple resume input works.
+- Resume processing works.
+- JD processing works.
+- Matching works.
+- Missing skills are identified.
+- Scores are calculated.
+- Ranking works.
+- Recommendations work.
+- Explanation works.
+- Invalid inputs are handled.
+- Results are dynamically generated.
+
+========================================================
+17. PROJECT STRUCTURE
+========================================================
+
+Create a clean and maintainable structure.
+
+For example:
+
+intelligent-resume-analyzer/
+│
+├── app/
+│   ├── main
+│   ├── analyzer
+│   ├── parser
+│   ├── matcher
+│   ├── scorer
+│   └── utils
+│
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+│
+├── data/
+│   ├── sample_jd
+│   └── sample_resumes
+│
+├── tests/
+│
+├── README.md
+└── .gitignore
+
+Choose appropriate file extensions.
+
+Do NOT create unnecessary dependencies.
+
+========================================================
+18. GITHUB REQUIREMENT
+========================================================
+
+The final GitHub repository must contain the COMPLETE SOURCE CODE.
+
+Include:
+
+- Application source code
+- Frontend source code
+- Processing logic
+- Scoring logic
+- Matching logic
+- Sample data
+- Tests
+- README
+- Required configuration files only
+
+The repository must be sufficient for another person to understand and run the project.
+
+README must contain:
+
+- Project title
+- Problem statement
+- Objective
+- Features
+- Workflow
+- Architecture
+- Matching methodology
+- Scoring methodology
+- How to run
+- How to use
+- Testing
+- Limitations
+- Future improvements
+- Constraint compliance
+
+Clearly mention that resume analysis does not depend on external packages/APIs.
+
+========================================================
+19. DEMO VIDEO REQUIREMENT
+========================================================
+
+The final application must be easy to demonstrate in a video.
+
+Demo flow:
+
+STEP 1:
+Open the application.
+
+STEP 2:
+Enter/provide the Job Description.
+
+STEP 3:
+Add multiple candidate resumes.
+
+STEP 4:
+Click Analyze.
+
+STEP 5:
+Show the analysis results.
+
+STEP 6:
+Show candidate ranking.
+
+STEP 7:
+Open the top candidate.
+
+STEP 8:
+Show:
+- Match score
+- Matched skills
+- Missing skills
+- Education
+- Experience
+- Certifications
+- Keywords
+- Score breakdown
+- Recommendation
+
+STEP 9:
+Open another candidate.
+
+STEP 10:
+Compare the results.
+
+STEP 11:
+Show that the ranking is based on the actual JD/resume comparison.
+
+The demo must show REAL working functionality.
+
+Do NOT create a fake/static demo.
+
+========================================================
+20. DEVELOPMENT PROCESS
+========================================================
+
+Follow this exact development process:
+
+PHASE 1:
+Read and understand the official problem statement.
+
+PHASE 2:
+Identify the official constraints.
+
+PHASE 3:
+Design the system architecture.
+
+PHASE 4:
+Design the data flow.
+
+PHASE 5:
+Design the JD processing logic.
+
+PHASE 6:
+Design the resume processing logic.
+
+PHASE 7:
+Design the matching algorithm.
+
+PHASE 8:
+Design the scoring algorithm.
+
+PHASE 9:
+Design candidate ranking.
+
+PHASE 10:
+Implement the backend/core logic.
+
+PHASE 11:
+Implement the interface.
+
+PHASE 12:
+Connect the interface with the analyzer.
+
+PHASE 13:
+Create sample data.
+
+PHASE 14:
+Test the complete application.
+
+PHASE 15:
+Fix errors.
+
+PHASE 16:
+Perform a strict rules audit.
+
+PHASE 17:
+Prepare the project for GitHub.
+
+========================================================
+21. STRICT RULE AUDIT
+========================================================
+
+Before declaring the project complete, inspect EVERY file.
+
+Verify:
+
+[ ] No external package
+[ ] No external library
+[ ] No third-party API
+[ ] No online AI API
+[ ] No cloud AI service
+[ ] No external resume parser
+[ ] No prohibited dependency
+[ ] Resume analysis uses only built-in programming-language functionality
+[ ] JD processing uses only allowed functionality
+[ ] Comparison logic is internally implemented
+[ ] Scoring logic is internally implemented
+[ ] Ranking is internally implemented
+[ ] Complete source code exists
+[ ] Application actually works
+[ ] Multiple resumes work
+[ ] Results are dynamically generated
+[ ] Scores are explainable
+[ ] Demo can demonstrate real functionality
+
+If ANY item fails:
+
+STOP.
+
+Fix the violation before continuing.
+
+========================================================
+22. MOST IMPORTANT INSTRUCTION
+========================================================
+
+DO NOT prioritize advanced features over rule compliance.
+
+DO NOT install a package because it is convenient.
+
+DO NOT use an API because it improves accuracy.
+
+DO NOT use an external AI model.
+
+DO NOT bypass any official constraint.
+
+If there is a conflict:
+
+OFFICIAL RULES > FEATURES > VISUAL DESIGN
+
+Always choose the rule-compliant implementation.
+
+========================================================
+23. FINAL EXPECTATION
+========================================================
+
+Build the ACTUAL WORKING INTELLIGENT RESUME ANALYZER.
+
+It must solve the given problem:
+
+"Evaluate resumes against job requirements and assist recruiters in identifying the most relevant candidates in a shorter time."
+
+The final application must be:
+
+- Functional
+- Simple
+- Efficient
+- Reliable
+- Explainable
+- Locally usable
+- Professional
+- GitHub-ready
+- Demo-ready
+
+Most importantly:
+
+STRICTLY FOLLOW THE OFFICIAL RULES.
+DO NOT USE ANY EXTERNAL PACKAGES, LIBRARIES, OR THIRD-PARTY APIs FOR RESUME ANALYSIS.
+USE ONLY THE PROGRAMMING LANGUAGE'S BUILT-IN FEATURES FOR PROCESSING AND COMPARISON.
